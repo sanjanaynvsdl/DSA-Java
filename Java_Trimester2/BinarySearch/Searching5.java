@@ -1,5 +1,4 @@
-package Java_Trimester2.BinarySearch;
-// import java.util.*;
+
 public class Searching5 {
     //17-11-23
 

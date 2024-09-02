@@ -15,6 +15,8 @@ public class pc2 {
     public int[] serialize(treeNode A) {
         ArrayList<Integer> ans=new ArrayList<>();
         Queue<Integer> Q=new LinkedList<>();
+        int ans1[]=new int[ans.size()];
+        return ans1;
         
 
     }

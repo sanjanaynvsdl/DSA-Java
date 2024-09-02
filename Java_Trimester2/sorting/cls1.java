@@ -1,5 +1,3 @@
-package DSA_Trimester2.sorting;
-import java.util.*;
 
 public class cls1 {
 

@@ -1,5 +1,4 @@
-package Java_Trimester2.BinarySearch;
-// import java.util.*;
+
 
 public class Searching3 {
     //IN this class search space is explicitly not given first will find define nd apply binary search.

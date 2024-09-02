@@ -1,4 +1,3 @@
-package Java_Trimester2.BinarySearch;
 
 public class Searching3Imp {
     //1 Aggressive cows

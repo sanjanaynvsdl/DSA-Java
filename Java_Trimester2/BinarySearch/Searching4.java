@@ -1,5 +1,4 @@
-package Java_Trimester2.BinarySearch;
-// import java.util.*;
+
 
 public class Searching4 {
     //1Painter's partition problem.

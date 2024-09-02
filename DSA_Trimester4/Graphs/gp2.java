@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.*;
 
 class Pair{
     int val;
@@ -63,9 +64,9 @@ public class gp2 {
     
 
     //The case where the graph is not connected 
-    //MOst of the times we just get a matrix we ourselves form that problem into a graph
+    //Most of the times we just get a matrix we ourselves form that problem into a graph
     //2
-    /*Given a matrix  of 1's and 0's 1's are islands rest are water
+    /* Given a matrix  of 1's and 0's 1's are islands rest are water
      * 
      * 1 1 0 0 0
      * 1 1 0 0 0
@@ -134,10 +135,9 @@ public boolean isCycle(int A, int B[][]) {
     }
     Queue<Pair> Q=new LinkedList<>();
     boolean[] isVis=new boolean[A+1];
-    isVis[curr.val]=true;
     while(!Q.isEmpty()) {
         Pair curr=Q.poll();
-
+        // isVis[curr.val]=true;
         for(int i=0;i<adj[curr.val].size();i++) {
             int neighbor=adj[curr.val].get(i);
             if(!isVis[neighbor]) {
@@ -181,7 +181,6 @@ public class Solution {
             }
         }
         return false;
-
     }
     public int solve(int A, int[][] B) {
         //Construct Adjacency-list
@@ -210,7 +209,7 @@ public  static boolean cyclicDFS(int node, int parent, ArrayList<Integer>[] adj,
     for(int i=0;i<adj[node].size();i++) {
         int neighbour=adj[node].get(i);
         if(isVis[neighbour]==false) {
-            if(DFS(neighbour,node,adj,isVis)==true) {
+            if(cyclicDFS(neighbour,node,adj,isVis)==true) {
                 return true;
             }
         }

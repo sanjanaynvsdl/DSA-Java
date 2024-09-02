@@ -1,5 +1,3 @@
-package Java_Trimester2.BinarySearch;
-// import java.util.*;
 
 public class Searching3Impp {
 
