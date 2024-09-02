@@ -1,4 +1,4 @@
- 
+ import java.util.*;
 //  ANY TYPE OF NETWORK IS CALLED GRAPH (SHOULD BE SOLVED USING GRAPH ALGORITHM )
  class Node {
     int row;
@@ -127,9 +127,6 @@ public class gp1{
     
     //2
     //Multiple-BFS
-  
-
-
     class Node {
         int row;
         int col;
